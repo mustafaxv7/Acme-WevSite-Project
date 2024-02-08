@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f4f4f4;
+}
+/* golobal */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.button-1 {
+    height: 38px;
+    padding: 0 20px 0 20px;
+    background-color: #e8491d;
+    color:#fff;
+    border:none;
+}
+/* header */
+header{
+    background-color: #35424a;
+    color:#fff;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    min-height: 70px;
+    border-bottom:#e8491d 3px solid;
+}
+
+header a {
+    text-decoration: none;
+    color:#fff;
+}
+
+header a:hover {
+    color: #ccc;
+    font-weight: bold;
+}
+header li {
+    display:inline;
+    float:left;
+    padding:0 20px 0 20px;
+}
+#branding{
+    float:left;
+}
+nav {
+    float:right;
+    margin-top: 10px;
+}
+
+header .highlight , header .current a {
+    color: #e8491d;
+    font-weight: bold;
+}
+/* showcase */
+#showcase {
+    min-height: 400px;
+    background:url('./images/showcase.jpg') no-repeat 0 -400px;
+    text-align: center;
+    color:#fff;
+}
+
+#showcase h1 {
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+#showcase p {
+    font-size: 20px;
+}
+/* newsletter */
+#newsletter{
+    padding:30px;
+    background-color: #35424a;
+    color:#fff;
+}
+#newsletter h1 {
+    float:left;
+}
+#newsletter form {
+    float:right;
+    margin-top: 10px;
+}
+#newsletter input[type="email"]{
+    padding:4px;
+    width:250px;
+    height: 38px;
+}
+/* Boxes */
+#boxes {
+    margin-top:25px;
+}
+#boxes .box {
+    float:left;
+    width:30%;
+    text-align: center;
+    padding:30px;
+    margin-left: 15px;
+}
+#boxes .box img {
+    width:90px;
+}
+/* main  */
+#main {
+    margin-top: 20px;
+   
+}
+/*main col*/
+.main-col {
+    margin-top: 30px;
+    width:60%;
+    float:left;
+    line-height: 1.5;
+}
+.main-col h1 {
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+/* sidebar */
+#sidebar {
+    margin-top: 70px;
+    width:30%;
+    padding:15px;
+    float:right;
+    line-height: 1.5;
+    background-color: #35424a;
+    color:#fff;
+}
+#sidebar h3 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#sidebar .quote input, textarea {
+    width:90%;
+    padding: 10px;
+}
+.main-col h3 {
+    margin-top:15px;
+    margin-bottom: 7px;
+}
+/* services  */
+#services li {
+    list-style: none;
+    padding:20px;
+    border: #ccc solid 1px;
+    margin-bottom: 5px;
+    background-color: #e6e6e6;
+}
+/* footer */
+footer {
+    padding:20px;
+    margin-top: 30px;
+    background-color: #e8491d;
+    color:#fff;
+    text-align: center;
+}
+/* Media Quiries */
+@media(max-width:768px){
+    header #branding , header nav , header nav li,
+    #newsletter h1 , #newsletter form
+    ,#boxes .box,article#main-col, aside#sidebar {
+        float:none;
+        text-align: center;
+        width:100%;
+    }
+    #showcase h1 {
+        margin-top: 40px;
+    }
+    #showcase p {
+        margin-bottom: 15px;
+        text-align: center;
+        width:100%;
+    }
+    
+    #newsletter button, .quote button {
+        display:block;
+        width:100%;
+        margin-top: 10px;
+    }
+    #newsletter form input[type="email"]{
+        width:100%;
+    }
+}
